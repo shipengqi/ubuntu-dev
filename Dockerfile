@@ -3,8 +3,8 @@ FROM ubuntu:${UBUNTU_VERSION}
 
 ENV DEBIAN_FRONTEND=noninteractive \
     DEBCONF_NONINTERACTIVE_SEEN=true \
-    GOLANG_VERSION=1.13.4 \
-    NODE_VERSION=12.16.1
+    GOLANG_VERSION=1.16.7 \
+    NODE_VERSION=14.17.4
 
 # Force timezone, refer to https://stackoverflow.com/a/47909037
 RUN echo "tzdata tzdata/Areas select Asia" > /tmp/preseed.txt; \
